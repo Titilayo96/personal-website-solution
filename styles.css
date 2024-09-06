@@ -1,0 +1,203 @@
+body {
+    font-family:'Times New Roman', serif,
+    margin: 0;
+    padding: 0;
+    background-color: lightgray; 
+    color: #333;
+}
+
+header {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-end;
+    gap: 5px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    width: 80%;
+    background-color: ;
+}
+
+
+#headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300vh;
+    height: 80vh;
+    background-color: plum;   
+}
+
+#headline {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: blueviolet;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: blueviolet; 
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    margin: 20px;
+}
+li {
+    margin: 10px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1em; 
+}
+
+.contact-link {
+    display: flex;
+    gap: 20px;
+}
+.contact-link a {
+    color: #333;
+    text-decoration: none;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    background-color: rgba(143, 28, 28, 0.4); /* Dark gray modal background */
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; /* Light gray caption text */
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1c40f; /* Vibrant orange close button */
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Black close button hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+form input[type="submit"] {
+    background-color: plum; 
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+form input[type="submit"]:hover {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
